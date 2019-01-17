@@ -36,6 +36,6 @@ questions:
     label: 服务端口号：
 - variable: hostpath.path
   default: "/data/rsyslog"
-    group: "存储"
+  group: "存储"
   type: string
-label: 存在主机上的目录：
+  label: 存在主机上的目录：

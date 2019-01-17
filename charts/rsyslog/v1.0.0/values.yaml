@@ -8,4 +8,4 @@ service:
   port: 514
 
 hostpath:
-path: /data/rsyslog
+  path: /data/rsyslog
