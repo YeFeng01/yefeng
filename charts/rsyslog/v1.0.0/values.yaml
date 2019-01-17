@@ -1,4 +1,4 @@
-mage:
+image:
   repository: hub.i-soft.com.cn:5080/lxapp/rsyslog-server
   tag: v7.4.7
   pullPolicy: IfNotPresent
