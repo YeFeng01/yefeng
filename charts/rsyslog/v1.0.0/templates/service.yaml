@@ -12,4 +12,4 @@ spec:
 {{- end }}
   selector:
     app: {{ template "rsyslog.name" . }}
-release: "{{ .Release.Name }}"
+    release: "{{ .Release.Name }}"
