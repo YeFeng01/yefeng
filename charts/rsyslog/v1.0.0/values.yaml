@@ -1,6 +1,6 @@
 image:
   repository: hub.i-soft.com.cn:5080/lxapp/rsyslog-server
-  tag: v7.4.7
+  tag: v1.0
   pullPolicy: IfNotPresent
 
 service:
