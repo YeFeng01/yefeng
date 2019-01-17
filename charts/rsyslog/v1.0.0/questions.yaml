@@ -13,7 +13,7 @@ questions:
     type: string
     label: 镜像名：
   - variable: image.tag
-    default: "v7.4.7"
+    default: "v1.0"
     type: string
     label: 镜像tag：
 - variable: service.type
