@@ -1,8 +1,7 @@
-
 appVersion: 7.4.7
 description: rsyslogd
 name: rsyslog
-version: 7.4.7
+version: v1.0.0
 kewords:
 - rsyslog
 home: https://www.rsyslog.com/
