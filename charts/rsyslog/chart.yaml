@@ -1,1 +1,9 @@
 
+appVersion: 7.4.7
+description: rsyslogd
+name: rsyslog
+version: 7.4.7
+kewords:
+- rsyslog
+home: https://www.rsyslog.com/
+icon: http://hub.i-soft.com.cn:5081/rsyslog.png
