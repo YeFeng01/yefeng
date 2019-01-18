@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "rsyslog.fullname" . }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: 514
+      targetPort: 514
+{{- if .Values.service.nodePort }}
+      nodePort: {{ .Values.service.nodePort }}
+{{- end }}
+  selector:
+    app: {{ template "rsyslog.name" . }}
+    release: "{{ .Release.Name }}"
