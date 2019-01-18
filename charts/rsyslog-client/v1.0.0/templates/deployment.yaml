@@ -1,12 +1,12 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: {{ template "rsyslog.fullname" . }}
+  name: {{ template "rsyslog-client.fullname" . }}
 spec:
   template:
     metadata:
       labels:
-        app: {{ template "rsyslog.name" . }}
+        app: {{ template "rsyslog-client.name" . }}
         release: "{{ .Release.Name }}"
     spec:
       containers:
@@ -16,9 +16,9 @@ spec:
           ports:
           - containerPort: 514
           volumeMounts:
-          - name: {{ template "rsyslog.fullname" . }}
+          - name: {{ template "rsyslog-client.fullname" . }}
             mountPath: /var/log/
       volumes:
-       - name: {{ template "rsyslog.fullname" . }}
+       - name: {{ template "rsyslog-client.fullname" . }}
          hostPath:
            path: {{ .Values.hostpath.path }} 
