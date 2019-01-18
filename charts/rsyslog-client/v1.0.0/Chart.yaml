@@ -1,0 +1,8 @@
+appVersion: 7.4.7
+description: rsyslogd
+name: rsyslog
+version: v1.0.0
+kewords:
+- rsyslog
+home: https://www.rsyslog.com/
+icon: https://www.rsyslog.com/files/2019/01/logo_neu_cropped.png
