@@ -1,5 +1,5 @@
 image:
-  repository: hub.i-soft.com.cn:5080/lxapp/rsyslog-clinet
+  repository: hub.i-soft.com.cn:5080/lxapp/rsyslog-client
   tag: v1.0
   pullPolicy: IfNotPresent
 
