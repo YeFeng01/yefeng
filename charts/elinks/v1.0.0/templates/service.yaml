@@ -2,6 +2,3 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ template "elinks.fullname" . }}
-  selector:
-    app: {{ template "elinks.name" . }}
-    release: "{{ .Release.Name }}"
