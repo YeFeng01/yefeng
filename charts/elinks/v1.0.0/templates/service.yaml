@@ -3,7 +3,8 @@ kind: Service
 metadata:
   name: {{ template "elinks.fullname" . }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.service.type }}ports:
+    - port: 333
 {{- if .Values.service.nodePort }}
       nodePort: {{ .Values.service.nodePort }}
 {{- end }}
