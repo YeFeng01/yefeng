@@ -7,9 +7,3 @@ spec:
   ports:
     - port: 333
       targetPort: 333
-{{- if .Values.service.nodePort }}
-      nodePort: {{ .Values.service.nodePort }}
-{{- end }}
-  selector:
-    app: {{ template "elinks.name" . }}
-    release: "{{ .Release.Name }}"
