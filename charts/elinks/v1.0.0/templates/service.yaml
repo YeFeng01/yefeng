@@ -5,8 +5,6 @@ metadata:
 spec:
   type: {{ .Values.service.type }}ports:
     - port: 333
-{{- if .Values.service.nodePort }}
-      nodePort: {{ .Values.service.nodePort }}
 {{- end }}
   selector:
     app: {{ template "elinks.name" . }}
