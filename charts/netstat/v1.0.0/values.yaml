@@ -1,0 +1,6 @@
+image:
+  repository: hub.i-soft.com.cn:5080/lxapp/netstat
+  tag: v1.0
+  pullPolicy: IfNotPresent
+hostpath:
+  path: /data/netstat
