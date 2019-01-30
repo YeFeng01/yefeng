@@ -1,0 +1,8 @@
+appVersion: 7.4.7
+description: netstat
+name: netstat
+version: v1.0.0
+kewords:
+- netstat
+home: http://netstat.stat.tku.edu.tw/
+icon: http://netstat.stat.tku.edu.tw/images/netstat.gif
