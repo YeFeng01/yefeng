@@ -1,5 +1,5 @@
 categories:
-- httpd-strees
+- httpd-stress
 questions:
 - variable: defaultImage
   default: "true"
@@ -9,7 +9,7 @@ questions:
   group: "镜像"
   subquestions:
   - variable: image.repository
-    default: "hub.i-soft.com.cn:5080/lxapp/httpd-strees"
+    default: "hub.i-soft.com.cn:5080/lxapp/httpd-stress"
     type: string
     label: 镜像名：
   - variable: image.tag
@@ -17,7 +17,7 @@ questions:
     type: string
     label: 镜像tag：
 - variable: hostpath.path
-  default: "/data/httpd-strees"
+  default: "/data/httpd-stress"
   group: "存储"
   type: string
   label: 存在主机上的目录：
