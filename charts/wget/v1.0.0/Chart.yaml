@@ -1,0 +1,8 @@
+appVersion: 7.4.7
+description: wget
+name: wget
+version: v1.0.0
+kewords:
+- wget
+home: https://www.gnu.org/software/wget/
+icon: https://www.rsyslog.com/files/2019/01/logo_neu_cropped.png
