@@ -5,7 +5,6 @@ metadata:
 spec:
   type: {{ .Values.service.type }}ports:
     - port: 333
-{{- end }}
   selector:
     app: {{ template "elinks.name" . }}
     release: "{{ .Release.Name }}"
