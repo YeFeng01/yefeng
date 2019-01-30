@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "elinks.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "httpd-stress.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: httpd-stress
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+      volumes:
+       - name: {{ template "httpd-stress.fullname" . }}
+         hostPath:
+           path: {{ .Values.hostpath.path }}
