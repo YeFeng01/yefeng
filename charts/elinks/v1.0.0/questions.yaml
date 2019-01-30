@@ -9,7 +9,7 @@ questions:
   group: "镜像"
   subquestions:
   - variable: image.repository
-    default: "hub.i-soft.com.cn:5080/lxapp/elinks:v1.0"
+    default: "hub.i-soft.com.cn:5080/lxapp/elinks"
     type: string
     label: 镜像名：
   - variable: image.tag
