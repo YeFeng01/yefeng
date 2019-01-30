@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "netstat.fullname" . }}
+spec:
+  template:
+    metadata:
+      labels:
+        app: {{ template "netstat.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+        - name: netstat
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
+      volumes:
+       - name: {{ template "netstat.fullname" . }}
+         hostPath:
+           path: {{ .Values.hostpath.path }}
