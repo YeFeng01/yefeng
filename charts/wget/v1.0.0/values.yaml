@@ -3,4 +3,4 @@ image:
   tag: v1.0
   pullPolicy: IfNotPresent
 hostpath:
-path: /data/wget
+  path: /data/wget
