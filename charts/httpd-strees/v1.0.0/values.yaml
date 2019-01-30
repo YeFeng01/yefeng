@@ -1,6 +1,6 @@
 image:
-  repository: hub.i-soft.com.cn:5080/lxapp/httpd-strees
+  repository: hub.i-soft.com.cn:5080/lxapp/httpd-stress
   tag: v1.0
   pullPolicy: IfNotPresent
 hostpath:
-  path: /data/httpd-strees
+  path: /data/httpd-stress
