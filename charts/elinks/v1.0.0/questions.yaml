@@ -16,24 +16,6 @@ questions:
     default: "v1.0"
     type: string
     label: 镜像tag：
-- variable: service.type
-  default: "ClusterIP"
-  type: enum
-  options:
-    - "ClusterIP"
-    - "NodePort"
-  required: true
-  label: 服务类型：
-  show_subquestion_if: "NodePort"
-  group: "服务"
-  subquestions:
-  - variable: service.nodePort
-    default: ""
-    description: "端口号请在 514-550之间选择"
-    type: int
-    min: 514
-    max: 550
-    label: 服务端口号：
 - variable: hostpath.path
   default: "/data/elinks"
   group: "存储"
