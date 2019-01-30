@@ -5,4 +5,4 @@ version: v1.0.0
 kewords:
 - elinks
 home: http://elinks.or.cz/
-icon: https://www.rsyslog.com/files/2019/01/logo_neu_cropped.png
+icon: http://192.168.35.198/elinks.png
