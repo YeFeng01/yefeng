@@ -5,4 +5,4 @@ version: v1.0.0
 kewords:
 - netstat
 home: http://netstat.stat.tku.edu.tw/
-icon: http://netstat.stat.tku.edu.tw/images/netstat.gif
+icon: http://192.168.35.198/netstat.png
