@@ -1,5 +1,5 @@
 image:
-  repository: hub.i-soft.com.cn:5080/lxapp/elinks:v1.0
+  repository: hub.i-soft.com.cn:5080/lxapp/elinks
   tag: v1.0
   pullPolicy: IfNotPresent
 hostpath:
