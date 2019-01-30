@@ -5,4 +5,4 @@ version: v1.0.0
 kewords:
 - httpd-stress
 home: http://people.seas.harvard.edu/~apw/stress/
-icon: https://www.rsyslog.com/files/2019/01/logo_neu_cropped.png
+icon: http://192.168.35.198/stress.png
