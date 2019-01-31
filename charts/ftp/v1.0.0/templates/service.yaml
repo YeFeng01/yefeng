@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "ftp.fullname" . }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: 21
+      targetPort: 21
+{{- if .Values.service.nodePort }}
+      nodePort: {{ .Values.service.nodePort }}
+{{- end }}
+  selector:
+    app: {{ template "ftp.name" . }}
+    release: "{{ .Release.Name }}"
