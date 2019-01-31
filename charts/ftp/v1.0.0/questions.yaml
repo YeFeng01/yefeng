@@ -1,0 +1,41 @@
+categories:
+- ftp
+questions:
+- variable: defaultImage
+  default: "true"
+  label: 是否使用默认镜像？
+  type: boolean
+  show_subquestion_if: false
+  group: "镜像"
+  subquestions:
+  - variable: image.repository
+    default: "hub.i-soft.com.cn:5080/lxapp/ftp"
+    type: string
+    label: 镜像名：
+  - variable: image.tag
+    default: "v1.0"
+    type: string
+    label: 镜像tag：
+- variable: service.type
+  default: "ClusterIP"
+  type: enum
+  options:
+    - "ClusterIP"
+    - "NodePort"
+  required: true
+  label: 服务类型：
+  show_subquestion_if: "NodePort"
+  group: "服务"
+  subquestions:
+  - variable: service.nodePort
+    default: ""
+    description: "端口号请在 20-21之间选择"
+    type: int
+    min: 20
+    max: 21
+    label: 服务端口号：
+- variable: hostpath.path
+  default: "/data/ftp"
+  group: "存储"
+  type: string
+  label: 存在主机上的目录：
