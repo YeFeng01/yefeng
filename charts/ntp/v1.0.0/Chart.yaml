@@ -1,0 +1,8 @@
+appVersion: 7.4.7
+description: ntp
+name: ntp
+version: v1.0.0
+kewords:
+- ntp
+home: http://www.ntp.org/
+icon: https://www.rsyslog.com/files/2019/01/logo_neu_cropped.png
